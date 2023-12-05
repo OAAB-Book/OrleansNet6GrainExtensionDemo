@@ -3,6 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grains", "Grains", "{C9A3BB91-0F8D-4AA2-92CE-8A069BE7F690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{B2608BFD-FC01-4451-B497-2FB58715616B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{76DF10BE-719B-4DC5-8D19-C8F34A9EB981}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{6DECF492-36B1-4926-A1AD-4BFA201BC3AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{342902C3-0255-4967-9DD3-7023184134F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6Demo.Interface.Grains", "src\Shared\OrleansNet6Demo.Interface.Grains\OrleansNet6Demo.Interface.Grains.csproj", "{D8D658D1-9048-41EF-8855-4A61B1CA5EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6Demo.Grains.Hello", "src\Grains\OrleansNet6Demo.Grains.Hello\OrleansNet6Demo.Grains.Hello.csproj", "{20C4F0F6-BE78-4090-A626-59CF4283E619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6Demo.Grains.Counter", "src\Grains\OrleansNet6Demo.Grains.Counter\OrleansNet6Demo.Grains.Counter.csproj", "{EBDD1B42-968A-4A39-930D-F8C7918B2AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6Demo.Silo.WorkerService", "src\Hosting\Server\OrleansNet6Demo.Silo.WorkerService\OrleansNet6Demo.Silo.WorkerService.csproj", "{C4063135-C8DF-4788-A82E-9471F5203A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6Demo.Client.Console", "src\Hosting\Client\OrleansNet6Demo.Client.Console\OrleansNet6Demo.Client.Console.csproj", "{0EB09860-F081-4287-9B05-6B8515C6C657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6Demo.Interface.GrainExtensions", "src\Shared\OrleansNet6Demo.Interface.GrainExtensions\OrleansNet6Demo.Interface.GrainExtensions.csproj", "{55C387A2-0653-42DA-8760-7620D09F6471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +32,43 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76DF10BE-719B-4DC5-8D19-C8F34A9EB981} = {B2608BFD-FC01-4451-B497-2FB58715616B}
+		{6DECF492-36B1-4926-A1AD-4BFA201BC3AD} = {B2608BFD-FC01-4451-B497-2FB58715616B}
+		{D8D658D1-9048-41EF-8855-4A61B1CA5EC2} = {342902C3-0255-4967-9DD3-7023184134F8}
+		{20C4F0F6-BE78-4090-A626-59CF4283E619} = {C9A3BB91-0F8D-4AA2-92CE-8A069BE7F690}
+		{EBDD1B42-968A-4A39-930D-F8C7918B2AF4} = {C9A3BB91-0F8D-4AA2-92CE-8A069BE7F690}
+		{C4063135-C8DF-4788-A82E-9471F5203A54} = {6DECF492-36B1-4926-A1AD-4BFA201BC3AD}
+		{0EB09860-F081-4287-9B05-6B8515C6C657} = {76DF10BE-719B-4DC5-8D19-C8F34A9EB981}
+		{55C387A2-0653-42DA-8760-7620D09F6471} = {342902C3-0255-4967-9DD3-7023184134F8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8D658D1-9048-41EF-8855-4A61B1CA5EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D658D1-9048-41EF-8855-4A61B1CA5EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D658D1-9048-41EF-8855-4A61B1CA5EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D658D1-9048-41EF-8855-4A61B1CA5EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C4F0F6-BE78-4090-A626-59CF4283E619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C4F0F6-BE78-4090-A626-59CF4283E619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C4F0F6-BE78-4090-A626-59CF4283E619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C4F0F6-BE78-4090-A626-59CF4283E619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDD1B42-968A-4A39-930D-F8C7918B2AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDD1B42-968A-4A39-930D-F8C7918B2AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDD1B42-968A-4A39-930D-F8C7918B2AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDD1B42-968A-4A39-930D-F8C7918B2AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4063135-C8DF-4788-A82E-9471F5203A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4063135-C8DF-4788-A82E-9471F5203A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4063135-C8DF-4788-A82E-9471F5203A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4063135-C8DF-4788-A82E-9471F5203A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4063135-C8DF-4788-A82E-9471F5203A54}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0EB09860-F081-4287-9B05-6B8515C6C657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB09860-F081-4287-9B05-6B8515C6C657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB09860-F081-4287-9B05-6B8515C6C657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB09860-F081-4287-9B05-6B8515C6C657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB09860-F081-4287-9B05-6B8515C6C657}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{55C387A2-0653-42DA-8760-7620D09F6471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C387A2-0653-42DA-8760-7620D09F6471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C387A2-0653-42DA-8760-7620D09F6471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C387A2-0653-42DA-8760-7620D09F6471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

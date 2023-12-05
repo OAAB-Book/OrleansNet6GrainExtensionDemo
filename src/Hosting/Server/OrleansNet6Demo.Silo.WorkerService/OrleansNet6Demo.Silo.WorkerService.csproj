@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-OrleansNet6Demo.Silo.WorkerService-5A4D2139-8514-48F0-AA25-59801DF2872F</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="3.7.1" />
+        <PackageReference Include="Microsoft.Orleans.Server" Version="3.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Grains\OrleansNet6Demo.Grains.Counter\OrleansNet6Demo.Grains.Counter.csproj" />
+      <ProjectReference Include="..\..\..\Grains\OrleansNet6Demo.Grains.Hello\OrleansNet6Demo.Grains.Hello.csproj" />
+      <ProjectReference Include="..\..\..\Shared\OrleansNet6Demo.Interface.GrainExtensions\OrleansNet6Demo.Interface.GrainExtensions.csproj" />
+    </ItemGroup>
+</Project>

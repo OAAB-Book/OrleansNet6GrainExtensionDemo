@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Console + WorkerService Demo" type="CompoundRunConfigurationType">
+    <toRun name="OrleansNet6Demo.Silo.WorkerService" type="LaunchSettings" />
+    <toRun name="OrleansNet6Demo.Client.Console" type="DotNetProject" />
+    <method v="2" />
+  </configuration>
+</component>
