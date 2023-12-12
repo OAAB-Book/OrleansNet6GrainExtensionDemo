@@ -20,12 +20,6 @@ public class CounterGrain : Grain, ICounterGrain
         _logger = logger;
     }
 
-    public override Task OnDeactivateAsync()
-    {
-        _logger.LogInformation("CounterGrain {primaryKey} deactivated.", this.GetPrimaryKeyString());
-        return base.OnDeactivateAsync();
-    }
-
     public async Task Increment(int value = 1)
     {
         _counterState.State.Count += value;

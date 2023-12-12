@@ -14,12 +14,6 @@ public class HelloGrain : Grain, IHelloGrain
         _logger = logger;
     }
     
-    public override Task OnDeactivateAsync()
-    {
-        _logger.LogInformation("HelloGrain {primaryKey} deactivated.", this.GetPrimaryKeyString());
-        return base.OnDeactivateAsync();
-    }
-    
     public Task<string> SayHello(string greeting)
     {
         return Task.FromResult($"You said: '{greeting}', I say: Hello!");
